@@ -1,0 +1,9 @@
+ros2_install/
+python38_portable/
+build/
+install/
+log/
+__pycache__/
+*.pyc
+.env
+backend/__pycache__/

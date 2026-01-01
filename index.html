@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Swarm Mission Control</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- Login Overlay -->
+    <div id="login-overlay">
+        <div class="login-card">
+            <h1>MISSION CONTROL</h1>
+            <p>Secure Authentication Required</p>
+            <div class="input-group">
+                <label>USERNAME</label>
+                <input type="text" id="username" placeholder="admin">
+            </div>
+            <div class="input-group">
+                <label>PASSWORD</label>
+                <input type="password" id="password" placeholder="password">
+            </div>
+            <div id="login-status" style="color: #ff4444; font-size: 0.8rem; margin-bottom: 1rem; min-height: 1.2rem;">
+            </div>
+            <button class="login-btn" id="login-btn">INITIALIZE CONNECTION</button>
+        </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div id="dashboard">
+        <header>
+            <div class="logo">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+                SWARM<span>OS</span>
+            </div>
+            <div class="user-info">
+                <span id="connection-status" style="color: #ff4444; font-size: 0.7rem; margin-right: 15px;">●
+                    OFFLINE</span>
+                <span id="user-display">Admin</span>
+                <span class="role-badge" id="role-display">ADMINISTRATOR</span>
+                <button class="control-btn" id="logout-btn" onclick="window.logout()">LOGOUT</button>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <h2 style="margin: 0;">ROBOT FLEET</h2>
+                <button class="control-btn" id="quick-robot-btn"
+                    style="font-size: 0.6rem; padding: 4px 8px; color: var(--accent-green); border-color: var(--accent-green);">+
+                    ADD ROBOT</button>
+            </div>
+            <div id="robot-list">
+                <!-- Robots will be injected here -->
+            </div>
+        </aside>
+
+        <main class="map-container">
+            <canvas id="map-canvas"></canvas>
+            <div class="map-controls">
+                <button class="zoom-btn" id="zoom-in">+</button>
+                <button class="zoom-btn" id="zoom-out">−</button>
+            </div>
+            <div
+                style="position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.8); padding: 15px; border-radius: 8px; font-size: 0.8rem; border: 1px solid var(--accent-blue); backdrop-filter: blur(10px); z-index: 100;">
+                <div style="color: var(--accent-blue); font-weight: bold; margin-bottom: 5px; letter-spacing: 1px;">
+                    MISSION STATUS</div>
+                <div id="interaction-mode-display" style="font-weight: bold; color: white;">MODE: INJECT TASK</div>
+                <div style="margin-top: 8px; font-size: 0.7rem; color: #b0b0c0;">Click map to interact</div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <h2>MISSION LOGS</h2>
+            <div id="logs"
+                style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.6; height: 100%; overflow-y: auto; padding-right: 5px;">
+                <div>[SYSTEM] Connection established.</div>
+            </div>
+        </aside>
+
+        <footer class="bottom-panel">
+            <div class="mission-stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="active-tasks">0</span>
+                    <span class="stat-label">ACTIVE TASKS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="completed-tasks">0</span>
+                    <span class="stat-label">COMPLETED</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="fleet-energy">100%</span>
+                    <span class="stat-label">AVG ENERGY</span>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="control-btn" id="pause-btn">PAUSE</button>
+                <button class="control-btn" id="fail-btn" style="color: #ff4444; border-color: #ff4444;">FAIL</button>
+                <button class="control-btn" id="reset-btn" style="color: #ffcc00; border-color: #ffcc00;">RESET</button>
+                <button class="control-btn" id="clear-tasks-btn" style="color: #ff8c00; border-color: #ff8c00;">CLEAR
+                    TASKS</button>
+                <button class="control-btn" id="auto-task-btn"
+                    style="color: var(--accent-blue); border-color: var(--accent-blue);">AUTO: OFF</button>
+                <button class="control-btn" id="deploy-mode-btn"
+                    style="color: var(--accent-green); border-color: var(--accent-green);">DEPLOY MODE</button>
+                <button class="control-btn primary" id="add-task-btn">INJECT RANDOM</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
