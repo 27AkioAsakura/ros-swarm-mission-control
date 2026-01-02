@@ -4,9 +4,17 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional
 import asyncio
-from simulation import SwarmManager
+from .simulation import SwarmManager
+
+from fastapi.staticfiles import StaticFiles
+import os
 
 app = FastAPI(title="NASA-Grade Mission Control API")
+
+# Mount Frontend
+frontend_path = os.path.join(os.path.dirname(__file__), "..", "mission_control_web")
+if os.path.exists(frontend_path):
+    app.mount("/gui", StaticFiles(directory=frontend_path, html=True), name="gui")
 
 # CORS for Frontend
 app.add_middleware(
