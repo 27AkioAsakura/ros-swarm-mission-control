@@ -8,9 +8,8 @@ services:
       - key: PYTHON_VERSION
         value: 3.10
 
-  - type: web
-    name: ros-mission-control-frontend
-    env: static
+staticSites:
+  - name: ros-mission-control-frontend
     publishPath: .
     routes:
       - type: rewrite
