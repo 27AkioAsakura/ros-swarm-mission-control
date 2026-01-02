@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional
 import asyncio
-from .simulation import SwarmManager
+from simulation import SwarmManager
 
 app = FastAPI(title="NASA-Grade Mission Control API")
 
@@ -102,6 +102,3 @@ async def toggle_auto_task(data: AutoTaskToggle):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
-
-
-
